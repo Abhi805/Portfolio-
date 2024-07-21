@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    border: border-box;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+/*--box 1 --*/
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.amazon-logo{
+    background-image: url("amazon_logo\ \(2\).png");
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+    border-radius: 2.5px;
+}
+/*--box 2 --*/
+.deliver-to{
+   color: #cccc;
+   font-size: 0.85rem;
+   margin-left: 15px;
+}
+
+.india{
+    font-size: 1rem;
+    margin-left: 3px;
+
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/*--box 3 --*/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    width:450px;
+    height: 40px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+   
+}
+
+.nav-search:hover{
+    border: 2px solid #FF9900;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #F3A847;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #333333;
+}
+/*--box4--*/
+span{
+    font-size: 0.8rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-signin{
+
+    padding: 4px;
+}
+.nav-return{
+    padding: 4px;
+}
+
+
+.nav-language{
+    padding: 8px;
+  }
+
+.nav-address{
+    padding: 4px;
+}
+/*--box5--*/
+.nav-language2{
+    border: none;
+    width: 35px;
+    background-color: #131921;
+    color: white;
+}
+
+
+/*--box6--*/
+.nav-cart{
+    padding:8px;
+}
