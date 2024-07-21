@@ -6,8 +6,9 @@ import "./App.css";
 
 function App() {
   return (
-    <center>
-      <ClockHeading></ClockHeading>
+    <center  className="clock-container ">
+
+       <ClockHeading></ClockHeading>     
       <ClockSlogan></ClockSlogan>
       <CurrentTime></CurrentTime>
     </center>
