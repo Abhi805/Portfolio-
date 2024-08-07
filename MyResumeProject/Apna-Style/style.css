@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+}
+.container{
+    color: aliceblue;
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:0.8fr 5fr 0.2fr 0.1fr;
+    grid-template-areas: "navbar navbar navbar navbar"
+                         "sidebar  main main main"
+                         "sidebar box1 box2 box3"
+                         "sidebar footer footer footer";
+                    grid-gap: 0.2rem;
+                    text-align: center;
+                    font-size: 1.5rem;
+                        
+}
+
+
+
+
+.sidebar img{
+    width: 100%;
+    height: 100%;
+}
+
+
+   .sidebar{background: #2980b9;
+    grid-area: sidebar;
+}
+   .box1{background: #8e44ad; grid-area: box1; }
+   .box2{background: #2c3e50; grid-area: box2; }
+   .box3{background: #8e44ad; grid-area: box3; }
+   footer{background: #29b99c;grid-area: footer;}
+
+  /* .navbar{
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   background: rgba(51, 51, 51, 0.8);
+   height: 60px;
+
+}*/
+.navbar{
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: navbar;
+}
+ 
+.navbar ul{
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: azure;
+}
+
+.box3{
+    width: 100%;
+    height: 100%;
+    background-color: #E9ECF5;
+}
+
+.box2{
+    background-color:#FDFDB3
+}
+
+
+.box1{
+    width: 100%;
+    height: 100%;
+ background-color:#C4C3C6;
+}
+
+.logo{
+    margin-left: -133px;
+}
+
+.mainx{
+    width: 100%;
+    height: 100%;
+  
+   
+    animation: changeImage 10s linear infinite;
+
+    background-size: cover;
+    grid-area: main;
+}
+@keyframes changeImage {
+    0%{
+        background-image:  url('images/Banner-1.avif');
+    }
+    50%{
+        background-image:  url('images/Banner-2.avif');
+    }
+    100%{
+        background-image:  url('images/Banner-3.avif');
+    }
+   
+
+
+   @media only screen and (max-width:450px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 2fr 0.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: "navbar"
+                             "main"
+                             "sidebar"
+                             "box1"
+                             "box2"
+                             "box3"
+                             "footer";
+    }
+   }
+
+ 
